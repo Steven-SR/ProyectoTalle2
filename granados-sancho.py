@@ -2,7 +2,7 @@
 Dominio: El tablero hatsa ese punto, la pieza a probar, las posiciones de movimiento
 y el punto a llenar
 Codominio: Si logra colocar la pieza, el tablero con la pieza colocada y un True
-sino, el tablero original y un falzo
+sino, el tablero original y un falso
 """
 def move(T, cpiz,i,j,x,y):
     newT = [row[:] for row in T] 
@@ -29,7 +29,7 @@ def canplace(T, piZ, i, j):
 
 """
 Dominio: Una matriz, en este caso una pieza
-Codominio: Otra matiz, que es una versión recortada de la que entró
+Codominio: Otra matriz, que es una versión recortada de la que entró
 """
 def cropM(M):
     Mempty = []
@@ -61,7 +61,7 @@ def rotate(X, n):
 
 """
 Dominio: Una matriz
-Codominio: La version transpuesta de la matirz
+Codominio: La version transpuesta de la matriz
 """
 def transpose(A):
     return [[A[j][i] for j in range(len(A[0]))] for i in range(len(A))]
